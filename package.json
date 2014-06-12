@@ -1,0 +1,16 @@
+{
+  "name": "urclient",
+  "version": "0.0.1",
+  "description": "ur client",
+  "author": "Joshua M. Clulow <jmc@joyent.com>",
+  "private": true,
+  "dependencies": {
+    "amqp": "0.1.8",
+    "assert-plus": "0.1.5",
+    "extsprintf": "1.1.0"
+    "libuuid": "0.1.3",
+    "restify": "2.8.1",
+    "vasync": "1.5.0",
+    "verror": "1.4.0"
+  }
+}
