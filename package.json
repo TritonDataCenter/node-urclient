@@ -1,6 +1,6 @@
 {
   "name": "urclient",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ur client",
   "author": "Joshua M. Clulow <jmc@joyent.com>",
   "private": true,
