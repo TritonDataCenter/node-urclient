@@ -12,5 +12,13 @@
     "restify": "2.8.1",
     "vasync": "1.5.0",
     "verror": "1.4.0"
+  },
+  "scripts": {
+    "check": "make check"
+  },
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joyent/node-urclient.git"
   }
 }

@@ -1,6 +1,14 @@
 # node-urclient
 
-A high-level client for the use of the `ur-agent` in SmartDataCenter.
+A high-level client for the use of the [ur
+agent](http://github.com/joyent/sdc-ur-agent) in Joyent SmartDataCenter.  The
+client allows the consumer to discover compute nodes (servers) in a
+SmartDataCenter deployment, copy files to and from those nodes, and run
+arbitrary commands.
+
+This repository is part of the Joyent SmartDataCenter project (SDC).  For
+contribution guidelines, issues, and general documentation, visit the main
+[SDC](http://github.com/joyent/sdc) project page.
 
 ## Overview
 
@@ -69,21 +77,21 @@ node in `node_list`.
 
 ### `exec()`; Execute Script On Node
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ### `send_file()`; Send File To Node
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ### `recv_file()`; Receive File From Node
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ## `RunQueue`; Interacting With A Set Of Nodes
 
 ### `add_server()`; Add Node To Set
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ### `start()`; Begin Execution On Nodes In Set
 
@@ -95,20 +103,25 @@ arriving.
 
 ### `close()`; Finish Specifying Set
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ### `'dispatch'` event
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ### `'success'` event
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ### `'failure'` event
 
-*TODO*
+*TODO: Not Yet Documented*
 
 ### `'end'` event
 
-*TODO*
+*TODO: Not Yet Documented*
+
+## License
+
+This Source Code Form is subject to the terms of the Mozilla Public License, v.
+2.0.  For the full license text see LICENSE, or http://mozilla.org/MPL/2.0/.
