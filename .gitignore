@@ -1,2 +1,3 @@
 node_modules/
 .*.swp
+/0-npm-stamp

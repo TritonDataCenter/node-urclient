@@ -9,9 +9,14 @@
 #
 
 .PHONY: all
-all:
+all: 0-npm-stamp
+
+0-npm-stamp: package.json
+	rm -rf $(PWD)/node_modules
+	npm install
+	touch $@
 
 .PHONY: check
-check:
-	@jshint index.js lib/*.js
+check: 0-npm-stamp
+	@node_modules/.bin/jshint index.js lib/*.js
 
