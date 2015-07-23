@@ -5,8 +5,16 @@
 #
 
 #
-# Copyright (c) 2014, Joyent, Inc.
+# Copyright 2015 Joyent, Inc.
 #
+
+ROOT :=			$(PWD)
+NODE_MOD_BIN =		$(ROOT)/node_modules/.bin
+
+JSHINT =		$(NODE_MOD_BIN)/jshint
+JSCS =			$(NODE_MOD_BIN)/jscs
+
+CHECK_JS_FILES =	$(shell find *.js lib -name \*.js)
 
 .PHONY: all
 all: 0-npm-stamp
@@ -18,5 +26,11 @@ all: 0-npm-stamp
 
 .PHONY: check
 check: 0-npm-stamp
-	@node_modules/.bin/jshint index.js lib/*.js
+	$(JSHINT) $(CHECK_JS_FILES)
+	$(JSCS) $(CHECK_JS_FILES)
+	@echo "check ok"
+
+clean:
+	rm -f 0-npm-stamp
+	rm -rf node_modules
 
