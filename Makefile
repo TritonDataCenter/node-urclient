@@ -10,6 +10,7 @@
 
 ROOT :=			$(PWD)
 NODE_MOD_BIN =		$(ROOT)/node_modules/.bin
+TAP = 			$(NODE_MOD_BIN)/tape
 
 JSHINT =		$(NODE_MOD_BIN)/jshint
 JSCS =			$(NODE_MOD_BIN)/jscs
@@ -29,6 +30,13 @@ check: 0-npm-stamp
 	$(JSHINT) $(CHECK_JS_FILES)
 	$(JSCS) $(CHECK_JS_FILES)
 	@echo "check ok"
+
+.PHONY: test
+test:
+	$(TAP) test/*.js
+
+.PHONY: prepush
+prepush: check test
 
 clean:
 	rm -f 0-npm-stamp
