@@ -1,14 +1,15 @@
 # node-urclient
 
-A high-level client for the use of the [ur
-agent](http://github.com/joyent/sdc-ur-agent) in Joyent SmartDataCenter.  The
-client allows the consumer to discover compute nodes (servers) in a
-SmartDataCenter deployment, copy files to and from those nodes, ping nodes, and
-run arbitrary commands.
+This repository is part of the Joyent Triton project. See the [contribution
+guidelines](https://github.com/joyent/triton/blob/master/CONTRIBUTING.md) --
+*Triton does not use GitHub PRs* -- and general documentation at the main
+[Triton project](https://github.com/joyent/triton) page.
 
-This repository is part of the Joyent SmartDataCenter project (SDC).  For
-contribution guidelines, issues, and general documentation, visit the main
-[SDC](http://github.com/joyent/sdc) project page.
+A high-level client for the use of the [ur
+agent](http://github.com/joyent/sdc-ur-agent) in Joyent Triton DataCenter.  The
+client allows the consumer to discover compute nodes (servers) in a Triton
+DataCenter deployment, copy files to and from those nodes, ping nodes, and run
+arbitrary commands.
 
 ## Overview
 

@@ -1,8 +1,8 @@
 {
   "name": "urclient",
-  "version": "1.1.0",
-  "description": "ur client",
-  "author": "Joshua M. Clulow <jmc@joyent.com>",
+  "version": "1.2.0",
+  "description": "Triton ur client",
+  "author": "Joyent (joyent.com)",
   "dependencies": {
     "amqp": "0.2.4",
     "assert-plus": "0.2.0",
